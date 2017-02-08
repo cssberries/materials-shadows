@@ -1,0 +1,59 @@
+@shadow-color-key                 : 0, 0, 0,;
+@shadow-color--ambient            : 0, 0, 0,;
+
+@opacity-ratio                    : 1.6;
+
+@shadow-ambient-opacity--weaker   : 0.08;
+@shadow-ambient-opacity--weak     : @shadow-ambient-opacity--weaker * @opacity-ratio;
+@shadow-ambient-opacity--default  : @shadow-ambient-opacity--weak * @opacity-ratio;
+@shadow-ambient-opacity--strong   : @shadow-ambient-opacity--default * @opacity-ratio;
+@shadow-ambient-opacity--stronger : @shadow-ambient-opacity--strong * @opacity-ratio;
+
+@shadow-key-opacity--weaker       : 0.05;
+@shadow-key-opacity--weak         : @shadow-key-opacity--weaker * @opacity-ratio;
+@shadow-key-opacity--default      : @shadow-key-opacity--weak * @opacity-ratio;
+@shadow-key-opacity--strong       : @shadow-key-opacity--default * @opacity-ratio;
+@shadow-key-opacity--stronger     : @shadow-key-opacity--strong * @opacity-ratio;
+
+@shadow-size--key                 : 1px;
+
+@shadow-color-ambient--stronger   : ~"rgba(@{shadow-color--ambient}, @{shadow-ambient-opacity--stronger})";
+@shadow-color-key--stronger       : ~"rgba(@{shadow-color-key}, @{shadow-key-opacity--stronger})";
+
+@shadow-color-ambient--strong     : ~"rgba(@{shadow-color--ambient}, @{shadow-ambient-opacity--strong})";
+@shadow-color-key--strong         : ~"rgba(@{shadow-color-key}, @{shadow-key-opacity--strong})";
+
+@shadow-color-ambient--default    : ~"rgba(@{shadow-color--ambient}, @{shadow-ambient-opacity--default})";
+@shadow-color-key--default        : ~"rgba(@{shadow-color-key}, @{shadow-key-opacity--default})";
+
+@shadow-color-ambient--weak       : ~"rgba(@{shadow-color--ambient}, @{shadow-ambient-opacity--weak})";
+@shadow-color-key--weak           : ~"rgba(@{shadow-color-key}, @{shadow-key-opacity--weak})";
+
+@shadow-color-ambient--weaker     : ~"rgba(@{shadow-color--ambient}, @{shadow-ambient-opacity--weaker})";
+@shadow-color-key--weaker         : ~"rgba(@{shadow-color-key}, @{shadow-key-opacity--weaker})";
+
+@shadow-size-ambient--xs          : 0 1px 3px;
+@shadow-size-key--xs              : 0 1px 1px;
+
+@shadow-size-ambient--sm          : 0 2px 6px;
+@shadow-size-key--sm              : 0 1px 2px;
+
+@shadow-size-ambient--md          : 0 4px 12px;
+@shadow-size-key--md              : 0 1px 3px;
+
+@shadow-size-ambient--lg          : 0 8px 24px;
+@shadow-size-key--lg              : 0 2px 5px;
+
+@shadow-size-ambient--xl          : 0 16px 48px;
+@shadow-size-key--xl              : 0 6px 9px;
+
+@shadow-size-ambient--xs--top     : 0 -1px 3px;
+@shadow-size-key--xs--top         : 0 -1px 1px;
+@shadow-size-ambient--sm--top     : 0 -2px 6px;
+@shadow-size-key--sm--top         : 0 -2px 2px;
+@shadow-size-ambient--md--top     : 0 -4px 12px;
+@shadow-size-key--md--top         : 0 -4px 4px;
+@shadow-size-ambient--lg--top     : 0 -8px 24px;
+@shadow-size-key--lg--top         : 0 -8px 8px;
+@shadow-size-ambient--xl--top     : 0 -16px 48px;
+@shadow-size-key--xl--top         : 0 -16px 16px;

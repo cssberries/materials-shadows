@@ -1,0 +1,103 @@
+.shadow--stronger{
+    &.shadow--xs{box-shadow: @shadow-size-ambient--xs @shadow-color-ambient--stronger,@shadow-size-key--xs @shadow-color-key--stronger;}
+    &.shadow--sm {box-shadow: @shadow-size-ambient--sm @shadow-color-ambient--stronger,@shadow-size-key--sm @shadow-color-key--stronger;}
+    &.shadow--md {box-shadow: @shadow-size-ambient--md @shadow-color-ambient--stronger,@shadow-size-key--md @shadow-color-key--stronger;}
+    &.shadow--lg {box-shadow: @shadow-size-ambient--lg @shadow-color-ambient--stronger,@shadow-size-key--lg @shadow-color-key--stronger;}
+    &.shadow--xl {box-shadow: @shadow-size-ambient--xl @shadow-color-ambient--stronger,@shadow-size-key--xl @shadow-color-key--stronger;}
+}
+
+.shadow--strong{
+    &.shadow--xs{box-shadow: @shadow-size-ambient--xs @shadow-color-ambient--strong,@shadow-size-key--xs @shadow-color-key--strong;}
+    &.shadow--sm {box-shadow: @shadow-size-ambient--sm @shadow-color-ambient--strong,@shadow-size-key--sm @shadow-color-key--strong;}
+    &.shadow--md {box-shadow: @shadow-size-ambient--md @shadow-color-ambient--strong,@shadow-size-key--md @shadow-color-key--strong;}
+    &.shadow--lg {box-shadow: @shadow-size-ambient--lg @shadow-color-ambient--strong,@shadow-size-key--lg @shadow-color-key--strong;}
+    &.shadow--xl {box-shadow: @shadow-size-ambient--xl @shadow-color-ambient--strong,@shadow-size-key--xl @shadow-color-key--strong;}
+}
+
+.shadow--xs{box-shadow: @shadow-size-ambient--xs @shadow-color-ambient--default,@shadow-size-key--xs @shadow-color-key--default}
+.shadow--sm {box-shadow: @shadow-size-ambient--sm @shadow-color-ambient--default,@shadow-size-key--sm @shadow-color-key--default}
+.shadow--md {box-shadow: @shadow-size-ambient--md @shadow-color-ambient--default,@shadow-size-key--md @shadow-color-key--default}
+.shadow--lg {box-shadow: @shadow-size-ambient--lg @shadow-color-ambient--default,@shadow-size-key--lg @shadow-color-key--default}
+.shadow--xl {box-shadow: @shadow-size-ambient--xl @shadow-color-ambient--default,@shadow-size-key--xl @shadow-color-key--default}
+
+.shadow--weak{
+    &.shadow--xs{box-shadow: @shadow-size-ambient--xs @shadow-color-ambient--weak,@shadow-size-key--xs @shadow-color-key--weak;}
+    &.shadow--sm {box-shadow: @shadow-size-ambient--sm @shadow-color-ambient--weak,@shadow-size-key--sm @shadow-color-key--weak;}
+    &.shadow--md {box-shadow: @shadow-size-ambient--md @shadow-color-ambient--weak,@shadow-size-key--md @shadow-color-key--weak;}
+    &.shadow--lg {box-shadow: @shadow-size-ambient--lg @shadow-color-ambient--weak,@shadow-size-key--lg @shadow-color-key--weak;}
+    &.shadow--xl {box-shadow: @shadow-size-ambient--xl @shadow-color-ambient--weak,@shadow-size-key--xl @shadow-color-key--weak;}
+}
+
+.shadow--weaker{
+    &.shadow--xs{box-shadow: @shadow-size-ambient--xs @shadow-color-ambient--weaker,@shadow-size-key--xs @shadow-color-key--weaker;}
+    &.shadow--sm {box-shadow: @shadow-size-ambient--sm @shadow-color-ambient--weaker,@shadow-size-key--sm @shadow-color-key--weaker;}
+    &.shadow--md {box-shadow: @shadow-size-ambient--md @shadow-color-ambient--weaker,@shadow-size-key--md @shadow-color-key--weaker;}
+    &.shadow--lg {box-shadow: @shadow-size-ambient--lg @shadow-color-ambient--weaker,@shadow-size-key--lg @shadow-color-key--weaker;}
+    &.shadow--xl {box-shadow: @shadow-size-ambient--xl @shadow-color-ambient--weaker,@shadow-size-key--xl @shadow-color-key--weaker;}
+}
+
+.shadow--t {
+    &.shadow--xs {
+        box-shadow: @shadow-size-ambient--xs--top @shadow-color-ambient--default, @shadow-size-key--xs--top @shadow-color-key--default
+    }
+}
+.shadow--t {
+    &.shadow--sm {
+        box-shadow: @shadow-size-ambient--sm--top @shadow-color-ambient--default, @shadow-size-key--sm--top @shadow-color-key--default
+    }
+}
+.shadow--t {
+    &.shadow--md {
+        box-shadow: @shadow-size-ambient--md--top @shadow-color-ambient--default, @shadow-size-key--md--top @shadow-color-key--default
+    }
+}
+.shadow--v {
+    position: relative;
+    &:after {
+        z-index: 1;
+        border-radius: 10px;
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        clip: rect(0, 0, auto, -20px);
+    }
+}
+
+.shadow--r {
+    position: relative;
+    &:before {
+        border-radius: 10px;
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        clip: rect(0, 0, auto, 0);
+    }
+}
+.on-hover--shadow-sm{
+    &:hover{
+        .shadow--sm;
+    }
+}
+.on-hover--shadow-md{
+    &:hover{
+        .shadow--md;
+    }
+}
+.on-hover--shadow-lg{
+    &:hover{
+        .shadow--lg;
+    }
+}
+.on-hover--shadow-xl{
+    &:hover{
+        .shadow--xl;
+    }
+}
